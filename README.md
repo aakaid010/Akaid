@@ -15,7 +15,7 @@ dependencies, no framework.
 ```
 index.html          About, research interests, news, publications
 research.html       Research overview, threads, current and earlier work
-publications.html   Submitted papers and manuscripts under review, with PDF and code links
+publications.html   Submitted papers and manuscripts, with PDF and code links
 experience.html     Industrial experience, leadership, honours
 cv.html             Web CV, links to the PDF
 404.html            Not-found page

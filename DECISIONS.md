@@ -24,7 +24,7 @@ uncertainty-aware learning. Keep that thread when rewriting About or Research.
 
 - **No phone number, home address, or referees' contact details** on the site.
   They live in the PDF CV only.
-- **No claim of publication.** Both conference papers are submitted and the tool wear journal paper is under review, and the site says so. No DOI, BibTeX, or
+- **No claim of publication.** Both conference papers are submitted and the tool wear journal paper is submitted, and the site says so. No DOI, BibTeX, or
   `datePublished` is given until a paper appears in proceedings.
 - **Thesis supervisor is not named** on the site, because the CV lists Dr. Md.
   Sanaul Rabbi as academic advisor without stating his thesis role.
