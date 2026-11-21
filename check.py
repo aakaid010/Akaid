@@ -30,7 +30,9 @@ PAGES = sorted(
     for p in glob.glob("*.html") + glob.glob("blog/*.html")
 )
 
-SITE = "https://aakaid010.github.io/"
+SITE = "https://aakaid010.github.io/Akaid/"
+# The site is a project site, so root-absolute paths (404.html) carry this prefix.
+BASE_PATH = "/Akaid/"
 INDEXABLE = [p for p in PAGES if p != "404.html"]
 
 
@@ -69,6 +71,7 @@ def normalise(fragment):
     """Collapse whitespace, drop the current-page marker, and make root-absolute
     URLs comparable with the relative ones used by pages at the site root."""
     fragment = fragment.replace(' aria-current="page"', "")
+    fragment = fragment.replace('href="' + BASE_PATH, 'href="').replace('src="' + BASE_PATH, 'src="')
     fragment = fragment.replace('href="/', 'href="').replace('src="/', 'src="')
     return re.sub(r"\s+", " ", fragment).strip()
 
@@ -96,6 +99,8 @@ def main():
                     problems.append(f"{page}: dead anchor {href}")
                 continue
             target, _, fragment = href.partition("#")
+            if target.startswith(BASE_PATH):
+                target = target[len(BASE_PATH):]
             target = target.lstrip("/")
             if not target:
                 continue
@@ -108,7 +113,8 @@ def main():
         for src in re.findall(r'src="([^"]+)"', html):
             if src.startswith(("http://", "https://", "data:")):
                 continue
-            if not os.path.exists(src.lstrip("/")):
+            path = src[len(BASE_PATH):] if src.startswith(BASE_PATH) else src
+            if not os.path.exists(path.lstrip("/")):
                 problems.append(f"{page}: missing asset -> {src}")
 
     # --- 2. Shared nav and footer have not drifted ---------------------------

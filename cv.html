@@ -6,13 +6,13 @@
 <title>CV &middot; Kazi Ahsan Ahmed Akaid</title>
 <meta name="description" content="Curriculum vitae of Kazi Ahsan Ahmed Akaid: education, research experience, publications, projects, and skills.">
 <meta name="author" content="Kazi Ahsan Ahmed Akaid">
-<link rel="canonical" href="https://aakaid010.github.io/cv.html">
+<link rel="canonical" href="https://aakaid010.github.io/Akaid/cv.html">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="CV · Kazi Ahsan Ahmed Akaid">
 <meta property="og:description" content="Education, research experience, publications, projects, and skills.">
-<meta property="og:url" content="https://aakaid010.github.io/cv.html">
-<meta property="og:image" content="https://aakaid010.github.io/assets/img/profile.jpeg">
+<meta property="og:url" content="https://aakaid010.github.io/Akaid/cv.html">
+<meta property="og:image" content="https://aakaid010.github.io/Akaid/assets/img/profile.jpeg">
 <meta name="twitter:card" content="summary">
 
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -62,7 +62,7 @@
 
     <div class="callout">
       <p>The complete CV, including referees, is available as a PDF.</p>
-      <a class="btn" href="assets/cv/Kazi_Ahsan_Ahmed_Akaid_CV.pdf" target="_blank" rel="noopener">
+      <a class="btn" href="https://drive.google.com/file/d/1qT6VCZd0eKtI7wdq2HQt4-H_qQkHkmn7/view?usp=sharing" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
         Download PDF
       </a>
@@ -91,41 +91,16 @@
       <div class="timeline">
       <div class="entry">
         <div class="entry__head">
-          <h3 class="entry__title">Research Team Member</h3>
-          <span class="entry__date">Oct 2026 &ndash; present</span>
-        </div>
-        <p class="entry__sub">ELITE Research Lab &middot; protocol stage, experiments not yet run</p>
-        <ul>
-          <li>Contributing to a ground-truth benchmark of simulated serial and merging production lines, with an injection protocol for six machine-state log defects (timestamp resolution, unlogged short stops, state-vocabulary collapse, downtime misattribution, data gaps, clock offsets).</li>
-          <li>Planned evaluation of six throughput-bottleneck detection methods on accuracy, rank agreement, throughput regret, and stability, leading to a data-quality specification tested on held-out line configurations.</li>
-        </ul>
-      </div>
-
-      <div class="entry">
-        <div class="entry__head">
           <h3 class="entry__title">Independent Researcher: Tool-Wear Prediction &amp; Uncertainty Quantification</h3>
           <span class="entry__date">2026</span>
         </div>
-        <p class="entry__sub">Manuscript submitted to <em>International Journal of Prognostics and Health Management</em> &middot; <a href="https://github.com/aakaid010/phm2010-tool-wear-reliability" target="_blank" rel="noopener">Code on GitHub</a></p>
+        <p class="entry__sub">Journal manuscript submitted to <em>International Journal of Prognostics and Health Management</em> &middot; PHM2010 and nine-tool milling datasets</p>
         <ul>
-          <li>Showed that changing only the calibration cutter, with the fitted model and test predictions held fixed, moved nominal 90% interval coverage from 14.9% to 84.2% (Random Forest) and from 42.7% to 85.7% (CNN&ndash;BiLSTM), at the cost of much wider intervals. The interleaved split behind this result was chosen after inspecting test outcomes, and the paper says so.</li>
-          <li>Cutter-held-out MAE on PHM2010 under a chronological split was 22.8&nbsp;&micro;m (Random Forest) and 31.3&nbsp;&micro;m (CNN&ndash;BiLSTM). Under the interleaved split, a sensor-free cut-index control (21.1&nbsp;&micro;m) matched the CNN&ndash;BiLSTM (20.6&nbsp;&micro;m), so MAE alone does not show transferable wear information.</li>
-          <li>At a 150&nbsp;&micro;m threshold, per-cut ROC-AUC exceeded 0.998, yet the first warning on cutter C6 came 29 to 39 cuts after the crossing. Ensemble disagreement did not track error.</li>
-          <li>Evaluated the interval procedure on an independent nine-tool milling dataset: 4.61&nbsp;&micro;m cutter-macro MAE and 97.3% coverage at nominal 90%.</li>
-        </ul>
-      </div>
-
-      <div class="entry">
-        <div class="entry__head">
-          <h3 class="entry__title">Undergraduate Thesis Researcher</h3>
-          <span class="entry__date">2025 &ndash; 2026</span>
-        </div>
-        <p class="entry__sub">Department of Mechanical Engineering, CUET &middot; Chattogram, Bangladesh</p>
-        <ul>
-          <li>Curated a 341-record dataset across 96 publications, resolving text-string parsing errors and category imbalances in acid hydrolysis data.</li>
-          <li>Implemented paper-grouped cross-validation (GroupKFold), revealing that conventional random splits drastically overstate generalisation (R&sup2;&nbsp;=&nbsp;0.86 against near-zero out-of-fold accuracy).</li>
-          <li>Evaluated feature importance across tree ensembles, showing strong Spearman rank agreement (&rho;&nbsp;&gt;&nbsp;0.88) between impurity and SHAP values.</li>
-          <li>Applied split-conformal prediction via MAPIE, constructing 90% prediction intervals to quantify out-of-distribution uncertainty across publication groups.</li>
+          <li>Compared five sources of calibration residuals for split-conformal wear intervals with the point model held fixed (Random Forest and gradient boosting), on 12 tools and 4 machines from two public datasets; the nine-tool protocol was fixed beforehand.</li>
+          <li>New tool (nine-tool data, Random Forest, nominal 90%): residuals from interleaved blocks of the training tools covered 53.7% (worst tool 13.0%). Leave-one-tool-out calibration covered 88.8% with the lowest interval score, beating late-life calibration on all 9 tools (p&nbsp;=&nbsp;0.004, both models) at about one-third the width.</li>
+          <li>New machine: leave-one-tool-out coverage fell to 65.8% (worst 26.1%); leave-one-machine-out calibration raised coverage on all 9 tools, to 94.5% (worst 74.1%), at 1.9&times; the width.</li>
+          <li>PHM2010 (interleaved split as a deliberately optimistic case): the same collapse, 16.8% coverage with same-cutter residuals against 84.3% with another cutter&rsquo;s. Random Forest beat a sensor-free cut-index curve on every cutter (MAE 14.5 against 21.1&nbsp;&micro;m interleaved; 22.7 against 26.4&nbsp;&micro;m chronological), and its tuned first warnings had lower decision cost (66 against 303; 154 against 742).</li>
+          <li>Code (release v1.1, archived on Zenodo): <a href="https://github.com/aakaid010/phm2010-tool-wear-reliability" target="_blank" rel="noopener">github.com/aakaid010/phm2010-tool-wear-reliability</a>.</li>
         </ul>
       </div>
 
@@ -134,15 +109,38 @@
           <h3 class="entry__title">Independent Researcher: Prognostics &amp; Explainable AI</h3>
           <span class="entry__date">2025 &ndash; 2026</span>
         </div>
-        <p class="entry__sub">Independent research &middot; Chattogram, Bangladesh</p>
+        <p class="entry__sub">NASA C-MAPSS FD001/FD003 &middot; conference paper accepted at ICMIEE 2026</p>
         <ul>
-          <li>Designed a stacking ensemble combining Random Forest, XGBoost, LightGBM, and CatBoost with a Ridge meta-learner for RUL prediction on the NASA C-MAPSS FD001 and FD003 datasets.</li>
-          <li>Developed a predictive modelling pipeline covering sensor-data preprocessing, feature engineering, ensemble learning, model evaluation, and explainability analysis.</li>
-          <li>Used Group K-Fold cross-validation to evaluate generalisation, assessed with RMSE and the NASA PHM08 scoring function.</li>
-          <li>Introduced quantitative cross-model explanation agreement metrics (Feature Agreement, Rank Agreement, Pairwise Rank Agreement, and Spearman correlation) using SHAP TreeExplainer.</li>
-          <li>Performed leakage-free SHAP-based feature pruning to investigate the trade-off between predictive accuracy, feature dimensionality, and inference efficiency.</li>
-          <li>Best single learners reached test RMSE 17.57 (FD001) and 19.39 (FD003); stacking did not improve on them, and mean pairwise-rank agreement of 0.87 and 0.84 between models is consistent with largely overlapping signal.</li>
-          <li>With pruning, 5 of 51 features gave RMSE 17.30 against 17.57 for the full set on FD001; FD003 needed about 30 features.</li>
+          <li>Built a leakage-aware pipeline stacking Random Forest, XGBoost, LightGBM, and CatBoost with a Ridge meta-learner, using engine-grouped cross-validation. The best single learners reached test RMSE 17.57 (FD001) and 19.39 (FD003), and stacking did not beat them.</li>
+          <li>Introduced cross-model SHAP explanation-agreement metrics (feature, rank, and pairwise-rank agreement, and Spearman correlation); mean pairwise-rank agreement of 0.87 (FD001) and 0.84 (FD003) explained why stacking added little.</li>
+          <li>Leakage-free SHAP pruning with nested GroupKFold: on FD001, 5 of 51 features gave RMSE 17.30 against 17.57 for the full set; FD003 needed about 30 features.</li>
+          <li>Code: <a href="https://github.com/aakaid010/RUL-Prediction-using-Nasa-C-MAPSS-DATA" target="_blank" rel="noopener">github.com/aakaid010/RUL-Prediction-using-Nasa-C-MAPSS-DATA</a>.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry__head">
+          <h3 class="entry__title">Research Team Member, ELITE Research Lab</h3>
+          <span class="entry__date">Sep 2026 &ndash; present</span>
+        </div>
+        <p class="entry__sub">Team member on &ldquo;Garbage in, Bottleneck Out? How Machine-State Data Defects Mislead Data-Driven Throughput-Bottleneck Detection&rdquo; &middot; protocol stage, experiments not yet run</p>
+        <ul>
+          <li>Contributing to a ground-truth benchmark of simulated serial and merging production lines, with an injection protocol for six machine-state log defects (timestamp resolution, unlogged short stops, state-vocabulary collapse, downtime misattribution, data gaps, clock offsets).</li>
+          <li>Planned evaluation of six throughput-bottleneck detection methods on accuracy, rank agreement, throughput regret, and stability, leading to a data-quality specification tested on held-out line configurations.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry__head">
+          <h3 class="entry__title">Undergraduate Thesis Researcher: ML for Nanocellulose Properties</h3>
+          <span class="entry__date">2025 &ndash; 2026</span>
+        </div>
+        <p class="entry__sub">Department of Mechanical Engineering, CUET &middot; Supervisor: Dr. M. S. Rabbi &middot; conference paper accepted at ICMIME 2026</p>
+        <ul>
+          <li>Compiled 341 observations from 96 publications linking acid concentration, temperature, time, and feedstock to cellulose nanocrystal (CNC) crystallinity and length; compared seven regressors with paper-grouped splits and cross-validation.</li>
+          <li>Random-split R&sup2; of 0.71 (crystallinity) and 0.86 (length) fell to negative (best &minus;0.30) and near zero (best 0.05) under paper-grouped evaluation (reported as protocol sensitivity).</li>
+          <li>SHAP and impurity rankings agreed (Spearman 0.975 and 0.976). 90% conformal intervals reached 100% and 95.8% coverage but were wide.</li>
+          <li>Code: <a href="https://github.com/aakaid010/NanoCNC-Predictor" target="_blank" rel="noopener">github.com/aakaid010/NanoCNC-Predictor</a>.</li>
         </ul>
       </div>
       </div>
@@ -153,23 +151,23 @@
       <ol>
         <li>
           <strong>K. A. A. Akaid</strong> and F. Fariha,
-          &ldquo;Calibration-Source Sensitivity and Warning Timing in Cutter-Held-Out Milling Tool-Wear Prediction,&rdquo;
-          submitted to <em>International Journal of Prognostics and Health Management</em>.
-          <a href="https://drive.google.com/file/d/16NIMoeBHeznJxTW6MwK181-q-fVo_CYv/view?usp=sharing" target="_blank" rel="noopener">PDF</a> &middot;
+          &ldquo;Calibration Sources for Conformal Tool-Wear Prediction Under Tool and Machine Shift,&rdquo;
+          submitted to <em>International Journal of Prognostics and Health Management</em> (2026).
+          <a href="https://drive.google.com/file/d/1k1IPAzMyoMc1ebUud7KTz2UiyhDIRx-A/view?usp=sharing" target="_blank" rel="noopener">PDF</a> &middot;
           <a href="https://github.com/aakaid010/phm2010-tool-wear-reliability" target="_blank" rel="noopener">Code</a>
         </li>
         <li>
           <strong>K. A. A. Akaid</strong> and M. S. Rabbi,
           &ldquo;Predictive Modeling of Nanocellulose Characteristics from Acid Hydrolysis Process Parameters Using Machine Learning,&rdquo;
-          submitted to <em>ICMIME 2026</em>, Rajshahi University of Engineering &amp; Technology.
-          <a href="https://drive.google.com/file/d/1aVovxoJafWseAExVJgdDOotD_bEAGqSA/view?usp=sharing" target="_blank" rel="noopener">PDF</a> &middot;
+          accepted at <em>ICMIME 2026</em>, Rajshahi University of Engineering &amp; Technology.
+          <a href="https://drive.google.com/file/d/1_D_SaeRuk-Vn8vOxQsK2rfXWs-V7PkDj/view?usp=sharing" target="_blank" rel="noopener">PDF</a> &middot;
           <a href="https://github.com/aakaid010/NanoCNC-Predictor" target="_blank" rel="noopener">Code</a>
         </li>
         <li>
           <strong>K. A. A. Akaid</strong>,
           &ldquo;Turbofan Engine Remaining Useful Life Prediction: Stacking Ensembles, Explanation Agreement, and Feature Pruning,&rdquo;
-          submitted to <em>ICMIEE 2026</em>, Khulna University of Engineering &amp; Technology.
-          <a href="https://drive.google.com/file/d/1Mn4pYpkbwmKOI20u7cuqsyDdrJcMwo-L/view?usp=sharing" target="_blank" rel="noopener">PDF</a> &middot;
+          accepted at <em>ICMIEE 2026</em>, Khulna University of Engineering &amp; Technology.
+          <a href="https://drive.google.com/file/d/1rYV0svY3Pnbo8S6sk3QOmyVnwqGLKeRw/view?usp=sharing" target="_blank" rel="noopener">PDF</a> &middot;
           <a href="https://github.com/aakaid010/RUL-Prediction-using-Nasa-C-MAPSS-DATA" target="_blank" rel="noopener">Code</a>
         </li>
       </ol>
@@ -187,7 +185,7 @@
         </div>
         <p class="entry__sub">Independent research &middot; <a href="https://github.com/aakaid010/phm2010-tool-wear-reliability" target="_blank" rel="noopener">Code on GitHub</a></p>
         <ul>
-          <li>Cutter-held-out evaluation of Random Forest and CNN&ndash;BiLSTM models, with calibration-source comparisons for prediction intervals and retrospective warning-timing analysis.</li>
+          <li>Split-conformal wear intervals under tool and machine shift, comparing five calibration sources with the point model held fixed, plus decision-cost analysis of first warnings.</li>
         </ul>
       </div>
 
@@ -219,17 +217,24 @@
     <section id="industrial">
       <h2>Industrial Experience</h2>
       <ul>
-        <li><strong>Industrial Attachment, Bangladesh Industrial Technical Assistance Center (BITAC), Chattogram:</strong> practical exposure to machining, CNC machinery, welding and fabrication, heat treatment, foundry and pattern making, machine maintenance, and inspection and testing.</li>
+        <li><strong>Industrial Attachment, Bangladesh Industrial Technical Assistance Center (BITAC), Chattogram (Dec 2025):</strong> exposure to conventional and non-conventional machining, CNC machinery, welding and fabrication, heat treatment, foundry and pattern making, machine maintenance, and inspection and testing.</li>
         <li><strong>Industrial Visit, S. Alam Cold Rolled Steels Limited, Chattogram:</strong> first-hand exposure to cold-rolled steel production and industrial manufacturing practices.</li>
       </ul>
       <p class="section-more"><a href="experience.html">Experience page &rarr;</a></p>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching Experience</h2>
+      <ul>
+        <li><strong>Private Tutor, Mathematics and Physics</strong> (2023&ndash;2025): tutored higher-secondary (college-level) students in mathematics and physics.</li>
+      </ul>
     </section>
 
     <section id="honors">
       <h2>Awards &amp; Leadership</h2>
       <ul>
         <li><strong>Dean&rsquo;s List</strong>, Department of Mechanical Engineering, CUET (3 semesters).</li>
-        <li><strong>Organizing Secretary</strong>, Robo Mechatronics Association (RMA), CUET.</li>
+        <li><strong>Organizing Secretary</strong>, Robo Mechatronics Association (RMA), CUET (2022&ndash;2025).</li>
         <li><strong>General Member</strong>, ASME Student Chapter, CUET.</li>
       </ul>
     </section>
@@ -242,12 +247,12 @@
           <dd>Python, MATLAB</dd>
         </div>
         <div class="row">
-          <dt>Machine Learning &amp; Validation</dt>
-          <dd>scikit-learn, Random Forest, Gradient Boosting, SVR, XGBoost, LightGBM, CatBoost, Stacking Ensembles, CNN, BiLSTM, Grouped Cross-Validation (GroupKFold), Conformal Prediction (MAPIE)</dd>
+          <dt>Machine Learning</dt>
+          <dd>scikit-learn, Random Forest, Gradient Boosting, SVR, XGBoost, LightGBM, CatBoost, Stacking Ensembles</dd>
         </div>
         <div class="row">
           <dt>Explainable AI</dt>
-          <dd>SHAP, Grad-CAM, Feature Importance Analysis, Cross-Model Explanation Agreement Metrics</dd>
+          <dd>SHAP, Feature-Importance Analysis, Cross-Model Explanation-Agreement Metrics</dd>
         </div>
         <div class="row">
           <dt>Uncertainty Quantification</dt>
@@ -255,15 +260,15 @@
         </div>
         <div class="row">
           <dt>Data Science</dt>
-          <dd>NumPy, pandas, Matplotlib, Feature Engineering, Feature Selection, Hyperparameter Optimization, Target Transformations, Model Evaluation</dd>
+          <dd>NumPy, pandas, Matplotlib, Feature Engineering, Feature Selection, Cross-Validation, Hyperparameter Optimization, Model Evaluation</dd>
         </div>
         <div class="row">
-          <dt>PHM / RUL</dt>
-          <dd>NASA C-MAPSS, IMS, Paderborn, PHM2010, RUL Prediction, Tool-Wear Prediction, Predictive Maintenance</dd>
+          <dt>PHM / Manufacturing</dt>
+          <dd>NASA C-MAPSS, PHM2010, RUL Prediction, Tool-Wear Prediction, Predictive Maintenance</dd>
         </div>
         <div class="row">
           <dt>Engineering &amp; Software</dt>
-          <dd>SolidWorks, Flask, Git/GitHub, LaTeX</dd>
+          <dd>SolidWorks, Git/GitHub, LaTeX</dd>
         </div>
         <div class="row">
           <dt>Research Platforms</dt>
@@ -293,7 +298,7 @@
       <span class="sep" aria-hidden="true">&middot;</span>
       <a href="mailto:akaid0001@gmail.com">akaid0001@gmail.com</a>
       <span class="sep" aria-hidden="true">&middot;</span>
-      <span class="nowrap">Last updated <time id="updated" datetime="2026-11-09">9 November 2026</time></span>
+      <span class="nowrap">Last updated <time id="updated" datetime="2026-11-22">22 November 2026</time></span>
     </p>
   </div>
 </footer>

@@ -86,7 +86,10 @@ own name in `<span class="me">`.
 
 ## Replace the CV PDF or the photo
 
-- Overwrite `assets/cv/Kazi_Ahsan_Ahmed_Akaid_CV.pdf`, keeping the filename.
+- The CV buttons link to the PDF on Google Drive. To update it, replace the
+  file on Drive (or change the Drive link in `index.html` and `cv.html`), and
+  also overwrite `assets/cv/Kazi_Ahsan_Ahmed_Akaid_CV.pdf` so the copy in the
+  repository stays current.
 - Replace `assets/img/profile.jpeg` with a **square** image (600x600 or larger),
   keeping the filename.
 
@@ -109,4 +112,4 @@ regenerate the sitemap with `python check.py --write-sitemap`.
 |---|---|
 | Email | `akaid0001@gmail.com` |
 | GitHub | `https://github.com/aakaid010` |
-| Site URL | `https://aakaid010.github.io/` |
+| Site URL | `https://aakaid010.github.io/Akaid/` |

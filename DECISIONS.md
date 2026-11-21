@@ -3,7 +3,7 @@
 Why this site looks and works the way it does. `AGENTS.md` holds the rules; this
 file holds the reasoning.
 
-Last updated: 9 November 2026.
+Last updated: 22 November 2026.
 
 ## Who this is for
 
@@ -17,14 +17,14 @@ question: does this help a busy academic reader find the research?
 The work spans materials data (nanocellulose), turbofan engines (C-MAPSS), and cutting-tool wear in CNC milling. These are one line of work, not three: in each, the
 question is whether a data-driven model can be trusted. The site states that
 question once, on the research page, and shows three threads: prognostics and
-RUL prediction, explanation agreement, and physics-informed and
-uncertainty-aware learning. Keep that thread when rewriting About or Research.
+RUL prediction, explanation agreement, and uncertainty
+quantification. Keep that thread when rewriting About or Research.
 
 ## Deliberate omissions
 
 - **No phone number, home address, or referees' contact details** on the site.
   They live in the PDF CV only.
-- **No claim of publication.** Both conference papers are submitted and the tool wear journal paper is submitted, and the site says so. No DOI, BibTeX, or
+- **No claim of publication.** Both conference papers are accepted but not yet in proceedings, and the tool wear journal paper is submitted, and the site says so. No DOI, BibTeX, or
   `datePublished` is given until a paper appears in proceedings.
 - **Thesis supervisor is not named** on the site, because the CV lists Dr. Md.
   Sanaul Rabbi as academic advisor without stating his thesis role.

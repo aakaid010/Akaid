@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Research &middot; Kazi Ahsan Ahmed Akaid</title>
-<meta name="description" content="Research by Kazi Ahsan Ahmed Akaid on remaining useful life prediction, explanation agreement, physics-informed machine learning, and uncertainty quantification.">
+<meta name="description" content="Research by Kazi Ahsan Ahmed Akaid on remaining useful life prediction, explanation agreement, and uncertainty quantification.">
 <meta name="author" content="Kazi Ahsan Ahmed Akaid">
-<link rel="canonical" href="https://aakaid010.github.io/research.html">
+<link rel="canonical" href="https://aakaid010.github.io/Akaid/research.html">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Research · Kazi Ahsan Ahmed Akaid">
-<meta property="og:description" content="Remaining useful life prediction, explanation agreement, physics-informed machine learning, and uncertainty quantification.">
-<meta property="og:url" content="https://aakaid010.github.io/research.html">
-<meta property="og:image" content="https://aakaid010.github.io/assets/img/profile.jpeg">
+<meta property="og:description" content="Remaining useful life prediction, explanation agreement, and uncertainty quantification.">
+<meta property="og:url" content="https://aakaid010.github.io/Akaid/research.html">
+<meta property="og:image" content="https://aakaid010.github.io/Akaid/assets/img/profile.jpeg">
 <meta name="twitter:card" content="summary">
 
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
@@ -79,7 +79,7 @@
       <p>
         My undergraduate thesis takes on validation and uncertainty for
         materials data. My independent work on turbofan engines takes on
-        explanation agreement in prognostics. My tool wear work takes on uncertainty quantification and warning timing when a model is applied to a cutter it has not seen.
+        explanation agreement in prognostics. My tool wear work takes on uncertainty quantification when a model is applied to a tool or a machine it has not seen.
         I see these as one line of work: prognostics and predictive maintenance
         that an engineer can rely on.
       </p>
@@ -96,7 +96,7 @@
         pipeline covers sensor-data preprocessing, feature engineering,
         ensemble learning, and evaluation with Group K-Fold cross-validation,
         RMSE, and the NASA PHM08 scoring function. The work is described in
-        <a href="publications.html#pub-cmapss-2026">a paper submitted to ICMIEE 2026</a>.
+        <a href="publications.html#pub-cmapss-2026">a paper accepted at ICMIEE 2026</a>.
       </p>
 
       <h3>2. Explainable AI &amp; explanation agreement</h3>
@@ -108,15 +108,21 @@
         carried out leakage-free SHAP-based feature pruning to examine the
         trade-off between predictive accuracy, feature dimensionality, and
         inference efficiency. In the thesis work, impurity-based and SHAP
-        importances agreed strongly across tree ensembles (Spearman&nbsp;&rho;&nbsp;&gt;&nbsp;0.88).
+        importances agreed closely (Spearman&nbsp;&rho;&nbsp;=&nbsp;0.975 and 0.976 for the two targets).
       </p>
 
-      <h3>3. Physics-informed &amp; uncertainty-aware machine learning</h3>
+      <h3>3. Uncertainty quantification</h3>
       <p>
-        For milling tool wear I evaluate Random Forest and CNN&ndash;BiLSTM models on cutting-force, vibration, and acoustic-emission signals, holding out whole cutters. The question is how much prediction intervals depend on which cutter supplies the calibration residuals, and whether accurate point predictions give timely warnings. A manuscript has been submitted. On the materials side, my
-        thesis used paper-grouped cross-validation and split-conformal
-        prediction (MAPIE) to show what generalisation really looks like across
-        publications, and to attach 90% prediction intervals to predictions.
+        For milling tool wear I study split-conformal prediction intervals
+        under tool and machine shift, on 12 tools and 4 machines from two
+        public datasets. The question is where the calibration residuals should
+        come from. On a new tool, residuals from interleaved blocks of the
+        training tools covered only 53.7% at nominal 90%, while leave-one-tool-out
+        calibration covered 88.8%; on a new machine, leave-one-machine-out
+        calibration was needed to restore coverage. A manuscript has been
+        submitted. On the materials side, my thesis used paper-grouped
+        cross-validation and split-conformal prediction to attach 90%
+        prediction intervals to predictions across publications.
       </p>
     </section>
 
@@ -126,21 +132,21 @@
       <div class="timeline">
       <div class="entry">
         <div class="entry__head">
-          <h3 class="entry__title">Calibration-Source Sensitivity and Warning Timing in Cutter-Held-Out Milling Tool-Wear Prediction</h3>
+          <h3 class="entry__title">Calibration Sources for Conformal Tool-Wear Prediction Under Tool and Machine Shift</h3>
           <span class="entry__date">Submitted</span>
         </div>
         <p class="entry__sub">Independent research &middot; journal manuscript &middot; <a href="https://github.com/aakaid010/phm2010-tool-wear-reliability" target="_blank" rel="noopener">Code on GitHub</a></p>
         <ul>
-          <li>Evaluated Random Forest and CNN&ndash;BiLSTM models on the PHM2010 milling dataset with cutter-held-out validation, using cutting-force, vibration, and acoustic-emission signals.</li>
-          <li>Showed that changing only the calibration cutter moved nominal 90% interval coverage from 14.9% to 84.2% for Random Forest, at the cost of much wider intervals.</li>
-          <li>Examined first-warning timing against a wear threshold, and tested the interval procedure on an independent nine-tool milling dataset.</li>
+          <li>Compared five sources of calibration residuals for split-conformal wear intervals, with the point model (Random Forest and gradient boosting) held fixed, on 12 tools and 4 machines from two public milling datasets. The nine-tool protocol was fixed in advance.</li>
+          <li>On a new tool, residuals from interleaved blocks of the training tools covered 53.7% at nominal 90% (worst tool 13.0%); leave-one-tool-out calibration covered 88.8% with the lowest interval score, at about one-third the width of late-life calibration.</li>
+          <li>On a new machine, leave-one-tool-out coverage fell to 65.8%; leave-one-machine-out calibration raised it to 94.5% at 1.9&times; the width.</li>
         </ul>
       </div>
 
       <div class="entry">
         <div class="entry__head">
           <h3 class="entry__title">Machine-State Data Defects and Throughput-Bottleneck Detection</h3>
-          <span class="entry__date">Oct 2026 &ndash; present</span>
+          <span class="entry__date">Sep 2026 &ndash; present</span>
         </div>
         <p class="entry__sub">ELITE Research Lab &middot; protocol stage</p>
         <ul>
@@ -161,7 +167,7 @@
           <h3 class="entry__title">Turbofan Engine RUL Prediction on NASA C-MAPSS</h3>
           <span class="entry__date">2025 &ndash; 2026</span>
         </div>
-        <p class="entry__sub">Independent research &middot; <a href="https://github.com/aakaid010/RUL-Prediction-using-Nasa-C-MAPSS-DATA" target="_blank" rel="noopener">Code on GitHub</a></p>
+        <p class="entry__sub">Independent research &middot; paper accepted at ICMIEE 2026 &middot; <a href="https://github.com/aakaid010/RUL-Prediction-using-Nasa-C-MAPSS-DATA" target="_blank" rel="noopener">Code on GitHub</a></p>
         <ul>
           <li>Built an end-to-end pipeline from raw multivariate sensor data through preprocessing, feature engineering, ensemble learning, evaluation, and explainability analysis.</li>
           <li>Designed a stacking ensemble of Random Forest, XGBoost, LightGBM, and CatBoost with a Ridge meta-learner, evaluated on FD001 and FD003 with Group K-Fold cross-validation.</li>
@@ -174,12 +180,11 @@
           <h3 class="entry__title">Predictive Modeling of Nanocellulose Characteristics (Undergraduate Thesis)</h3>
           <span class="entry__date">2025 &ndash; 2026</span>
         </div>
-        <p class="entry__sub">Department of Mechanical Engineering, CUET</p>
+        <p class="entry__sub">Department of Mechanical Engineering, CUET &middot; Supervisor: Dr. M. S. Rabbi &middot; paper accepted at ICMIME 2026</p>
         <ul>
-          <li>Curated a 341-record dataset across 96 publications, resolving text-string parsing errors and category imbalances in acid hydrolysis data.</li>
-          <li>Implemented paper-grouped cross-validation (GroupKFold), showing that conventional random splits drastically overstate generalisation (R&sup2;&nbsp;=&nbsp;0.86 against near-zero out-of-fold accuracy).</li>
-          <li>Found strong Spearman rank agreement (&rho;&nbsp;&gt;&nbsp;0.88) between impurity and SHAP feature importances across tree ensembles.</li>
-          <li>Applied split-conformal prediction via MAPIE to build 90% prediction intervals that quantify out-of-distribution uncertainty across publication groups.</li>
+          <li>Compiled 341 observations from 96 publications linking acid concentration, temperature, time, and feedstock to cellulose nanocrystal (CNC) crystallinity and length, and compared seven regressors with paper-grouped splits and cross-validation.</li>
+          <li>Random-split R&sup2; of 0.71 (crystallinity) and 0.86 (length) fell to negative (best &minus;0.30) and near zero (best 0.05) under paper-grouped evaluation, reported as protocol sensitivity.</li>
+          <li>SHAP and impurity rankings agreed (Spearman 0.975 and 0.976). 90% conformal intervals reached 100% and 95.8% coverage but were wide.</li>
         </ul>
       </div>
 
@@ -208,7 +213,7 @@
       <span class="sep" aria-hidden="true">&middot;</span>
       <a href="mailto:akaid0001@gmail.com">akaid0001@gmail.com</a>
       <span class="sep" aria-hidden="true">&middot;</span>
-      <span class="nowrap">Last updated <time id="updated" datetime="2026-11-09">9 November 2026</time></span>
+      <span class="nowrap">Last updated <time id="updated" datetime="2026-11-22">22 November 2026</time></span>
     </p>
   </div>
 </footer>

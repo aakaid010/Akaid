@@ -1,11 +1,11 @@
-# aakaid010.github.io
+# Akaid
 
 Personal academic website of **Kazi Ahsan Ahmed Akaid**, mechanical engineering
 graduate of Chittagong University of Engineering & Technology (CUET), working on
-prognostics and health management, explainable AI, and physics-informed machine
-learning.
+prognostics and health management, explainable AI, and uncertainty
+quantification.
 
-Live at <https://aakaid010.github.io/>
+Live at <https://aakaid010.github.io/Akaid/>
 
 ## Stack
 
@@ -41,7 +41,7 @@ why the site is built this way.
 
 ## Deploying
 
-1. Create a repository named exactly `aakaid010.github.io` on GitHub.
+1. The repository is `aakaid010/Akaid`, served as a project site under `/Akaid/`.
 2. Push these files to the `main` branch.
 3. Under *Settings, Pages*, set the source to **GitHub Actions**.
 

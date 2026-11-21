@@ -2,8 +2,8 @@
 
 Personal academic website for Kazi Ahsan Ahmed Akaid, a CUET mechanical
 engineering graduate working on prognostics and health management (PHM),
-remaining useful life (RUL) prediction, explainable AI, and physics-informed
-machine learning. The audience is prospective collaborators, supervisors, and
+remaining useful life (RUL) prediction, explainable AI, and uncertainty
+quantification. The audience is prospective collaborators, supervisors, and
 graduate programmes, so the site must read as a researcher's page: plain, quiet,
 and fast, not a developer portfolio.
 
@@ -16,8 +16,9 @@ and fast, not a developer portfolio.
    blocks deploy.
 3. **The `<nav>` and `<footer>` blocks are byte-identical across all pages,**
    on purpose. If you touch one, touch all of them and let `check.py` confirm.
-4. **`404.html` uses root-absolute paths** (`/assets/css/style.css`,
-   `/index.html`). Root pages use relative paths.
+4. **`404.html` uses root-absolute paths with the `/Akaid/` project prefix**
+   (`/Akaid/assets/css/style.css`, `/Akaid/index.html`), because the site is
+   served from <https://aakaid010.github.io/Akaid/>. Root pages use relative paths.
 5. **Colours are defined in three places** in `assets/css/style.css`: the
    `:root` block, the `@media (prefers-color-scheme: dark)` block, and the
    `:root[data-theme="dark"]` block. Change all three together.
@@ -43,9 +44,11 @@ and fast, not a developer portfolio.
   systems that can be trusted (validated without leakage, honest about
   uncertainty, with explanations that agree), across three threads: prognostics
   and RUL prediction, explainable AI and explanation agreement, and
-  physics-informed and uncertainty-aware machine learning.
+  uncertainty quantification. Do not describe physics-informed ML as a
+  research area.
 - Do not describe unpublished work as published. Papers are labelled
-  "submitted" or "in preparation" until they appear in proceedings.
+  "submitted", "accepted", or "in preparation" until they appear in
+  proceedings.
 
 ## Layout
 
@@ -82,9 +85,10 @@ Do not invent credentials. Current, verified values:
   final four-semester average 3.80/4.00
 - Thesis: Predictive Modeling of Nanocellulose Characteristics from Acid
   Hydrolysis Process Parameters Using Machine Learning
-- Submitted: nanocellulose thesis paper (ICMIME 2026, RUET); ICMIEE 2026 (KUET) turbofan RUL paper. Submitted: tool wear journal manuscript (International Journal of Prognostics and Health Management, Nov 2026). Paper PDFs are on Google Drive and linked from `publications.html`
-- Research Team Member, ELITE Research Lab, from Oct 2026 (protocol stage, experiments not yet run)
+- Accepted: nanocellulose thesis paper (ICMIME 2026, RUET); turbofan RUL paper (ICMIEE 2026, KUET). Submitted: tool wear journal manuscript, "Calibration Sources for Conformal Tool-Wear Prediction Under Tool and Machine Shift" (International Journal of Prognostics and Health Management, Nov 2026). Paper PDFs and the CV PDF are on Google Drive and linked from the pages
+- Research Team Member, ELITE Research Lab, from Sep 2026 (protocol stage, experiments not yet run)
 - IELTS Academic overall 7.5 (Listening 8.5, Reading 7.5, Writing 6.5, Speaking 7.0)
-- Dean's List, 3 semesters; Organizing Secretary of RMA; ASME CUET member
+- Dean's List, 3 semesters; Organizing Secretary of RMA (2022&ndash;2025); ASME CUET member
+- Private tutor, mathematics and physics, 2023&ndash;2025; BITAC industrial attachment, Dec 2025
 - Email `akaid0001@gmail.com` &middot; GitHub `aakaid010`
 - No Google Scholar, ORCID, or LinkedIn on file; do not add links until they exist
