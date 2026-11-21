@@ -45,7 +45,8 @@ and fast, not a developer portfolio.
   uncertainty, with explanations that agree), across three threads: prognostics
   and RUL prediction, explainable AI and explanation agreement, and
   uncertainty quantification. Do not describe physics-informed ML as a
-  research area.
+  research area. Additive manufacturing is listed on the homepage as an
+  interest only; there is no AM work yet, so do not describe any.
 - Do not describe unpublished work as published. Papers are labelled
   "submitted", "accepted", or "in preparation" until they appear in
   proceedings.
