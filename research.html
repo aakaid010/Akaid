@@ -102,12 +102,15 @@
       <h3>2. Explainable AI &amp; explanation agreement</h3>
       <p>
         Alongside accuracy, I ask whether different models explain their
-        predictions in the same way. Using SHAP TreeExplainer, I introduced
-        quantitative cross-model agreement metrics: Feature Agreement, Rank
-        Agreement, Pairwise Rank Agreement, and Spearman correlation. I also
-        carried out leakage-free SHAP-based feature pruning to examine the
-        trade-off between predictive accuracy, feature dimensionality, and
-        inference efficiency. In the thesis work, impurity-based and SHAP
+        predictions in the same way, and whether that tells us anything. Using
+        SHAP TreeExplainer, I measured cross-model agreement (feature, rank, and
+        pairwise-rank agreement, and Spearman correlation) and calibrated it
+        against how much a single model agrees with itself across random seeds
+        and bootstrap resamples. On C-MAPSS, disagreement between models was of
+        the same order as the instability caused by the training data, yet
+        per-engine agreement still tracked prediction error. I also chose the
+        number of SHAP-ranked features by inner cross-validation on training
+        engines only. In the thesis work, impurity-based and SHAP
         importances agreed closely (Spearman&nbsp;&rho;&nbsp;=&nbsp;0.975 and 0.976 for the two targets).
       </p>
 
@@ -170,8 +173,9 @@
         <p class="entry__sub">With N. I. Rafi &middot; paper accepted at ICMIEE 2026 &middot; <a href="https://github.com/aakaid010/RUL-Prediction-using-Nasa-C-MAPSS-DATA" target="_blank" rel="noopener">Code on GitHub</a></p>
         <ul>
           <li>Built an end-to-end pipeline from raw multivariate sensor data through preprocessing, feature engineering, ensemble learning, evaluation, and explainability analysis.</li>
-          <li>Designed a stacking ensemble of Random Forest, XGBoost, LightGBM, and CatBoost with a Ridge meta-learner, evaluated on FD001 and FD003 with Group K-Fold cross-validation.</li>
-          <li>Investigated explanation consistency across heterogeneous models as an additional perspective on model reliability in PHM applications.</li>
+          <li>Designed a stacking ensemble of Random Forest, XGBoost, LightGBM, and CatBoost with a non-negative Ridge meta-learner, evaluated on FD001 and FD003 with engine-grouped cross-validation; stacking matched but did not beat the best single learner (test RMSE 17.59 and 19.39).</li>
+          <li>Calibrated cross-model SHAP agreement against seed and bootstrap self-agreement baselines; per-engine agreement correlated with absolute error (Spearman &minus;0.39 and &minus;0.34).</li>
+          <li>Selected the number of SHAP-ranked features by inner cross-validation on training engines only; 10 features matched the full set on FD001 and cost about 0.8 cycles on FD003.</li>
         </ul>
       </div>
 

@@ -111,9 +111,10 @@
         </div>
         <p class="entry__sub">NASA C-MAPSS FD001/FD003 &middot; with N. I. Rafi &middot; conference paper accepted at ICMIEE 2026</p>
         <ul>
-          <li>Built a leakage-aware pipeline stacking Random Forest, XGBoost, LightGBM, and CatBoost with a Ridge meta-learner, using engine-grouped cross-validation. The best single learners reached test RMSE 17.57 (FD001) and 19.39 (FD003), and stacking did not beat them.</li>
-          <li>Introduced cross-model SHAP explanation-agreement metrics (feature, rank, and pairwise-rank agreement, and Spearman correlation); mean pairwise-rank agreement of 0.87 (FD001) and 0.84 (FD003) explained why stacking added little.</li>
-          <li>Leakage-free SHAP pruning with nested GroupKFold: on FD001, 5 of 51 features gave RMSE 17.30 against 17.57 for the full set; FD003 needed about 30 features.</li>
+          <li>Built a leakage-aware pipeline (RUL capped at 125, training-only scaling, 5-cycle rolling features) stacking Random Forest, XGBoost, LightGBM, and CatBoost with a non-negative Ridge meta-learner under engine-grouped cross-validation. The best single learners reached test RMSE 17.59 (FD001) and 19.39 (FD003); stacking matched but did not beat them, and accuracy is below published deep-learning results.</li>
+          <li>Calibrated cross-model SHAP agreement against self-agreement baselines: agreement between learners (Spearman 0.91 / 0.86) was below one learner&rsquo;s agreement with itself across seeds (0.95&ndash;0.96) but not below its agreement across bootstrap resamples of the training engines (0.84), so model disagreement is of the same order as data-driven attribution instability.</li>
+          <li>Per-engine agreement correlated with absolute error (Spearman &minus;0.39 and &minus;0.34, p&nbsp;&lt;&nbsp;0.001), and the association held after controlling for predicted RUL and ensemble spread.</li>
+          <li>Chose the number of SHAP-ranked features by inner GroupKFold on training engines (one-standard-error rule): 10 features on both subsets gave test RMSE 17.53 against 17.79 with all features (FD001) and 20.37 against 19.56 (FD003), with no change in inference latency.</li>
           <li>Code: <a href="https://github.com/aakaid010/RUL-Prediction-using-Nasa-C-MAPSS-DATA" target="_blank" rel="noopener">github.com/aakaid010/RUL-Prediction-using-Nasa-C-MAPSS-DATA</a>.</li>
         </ul>
       </div>
@@ -197,7 +198,7 @@
         <p class="entry__sub">With N. I. Rafi &middot; <a href="https://github.com/aakaid010/RUL-Prediction-using-Nasa-C-MAPSS-DATA" target="_blank" rel="noopener">Code on GitHub</a></p>
         <ul>
           <li>Built an end-to-end pipeline from raw multivariate sensor data through preprocessing, feature engineering, ensemble learning, model evaluation, and explainability analysis.</li>
-          <li>Investigated explanation consistency across heterogeneous machine learning models as an additional perspective for assessing model reliability in PHM applications.</li>
+          <li>Calibrated cross-model SHAP agreement against seed and bootstrap self-agreement baselines, and showed that per-engine agreement tracks prediction error.</li>
         </ul>
       </div>
 
