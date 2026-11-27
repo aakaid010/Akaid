@@ -86,7 +86,7 @@ Do not invent credentials. Current, verified values:
   final four-semester average 3.80/4.00
 - Thesis: Predictive Modeling of Nanocellulose Characteristics from Acid
   Hydrolysis Process Parameters Using Machine Learning
-- Accepted: nanocellulose thesis paper (ICMIME 2026, RUET); turbofan RUL paper (ICMIEE 2026, KUET). Submitted: tool wear journal manuscript, "Calibration Sources for Tool-Wear Prediction Intervals Under Tool and Machine Shift in Milling" (The International Journal of Advanced Manufacturing Technology, Nov 2026). Paper PDFs and the CV PDF are on Google Drive and linked from the pages
+- Accepted: nanocellulose thesis paper (ICMIME 2026, RUET); turbofan RUL paper (ICMIEE 2026, KUET). Under review: tool wear journal manuscript, "Calibration Sources for Tool-Wear Prediction Intervals Under Tool and Machine Shift in Milling" (The International Journal of Advanced Manufacturing Technology, submitted Nov 2026, in peer review since 27 Nov 2026). Paper PDFs and the CV PDF are on Google Drive and linked from the pages
 - Research Team Member, ELITE Research Lab, from Sep 2026 (protocol stage, experiments not yet run)
 - IELTS Academic overall 7.5 (Listening 8.5, Reading 7.5, Writing 6.5, Speaking 7.0)
 - Dean's List, 3 semesters; Organizing Secretary of RMA (2022&ndash;2025); ASME CUET member
